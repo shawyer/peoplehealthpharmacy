@@ -13,6 +13,12 @@ class ItemSale extends Model
     public $incrementing = true;
     public $timestamps =false;
 
-       
+    public function Items(){
+        return $this->belongsTo('App\Models\Item');
+    }
     
+    public function Sales(){
+        return $this->belongsTo('App\Models\Sale', 'id');
+    }
+
 }

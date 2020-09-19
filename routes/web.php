@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DisplayController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,6 +19,7 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+
 Route::get('/add', function () {
     return view('add');
 });
@@ -27,6 +29,12 @@ Route::get('/sales', function () {
 Route::get('/EditItem', function () {
     return view('Edititem');
 });
+
+
+Route::get('/display', [DisplayController::class, 'getItems']);
+
+Route::get('/displayItem/{itemName}', 'App\Http\Controllers\DisplayController@displayItemInfo')->name('displayItem');
+
 Route::post('/add','App\Http\Controllers\AddController@index')->name('add');
 Route::post('/post-add','App\Http\Controllers\AddController@submit')->name('submit');
 Route::post('/post-sale','App\Http\Controllers\AddController@sale')->name('sale');
