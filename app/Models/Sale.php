@@ -11,4 +11,9 @@ class Sale extends Model
     protected $table = "Sales";
     protected $primaryKey = 'id';
     public $incrementing = true;
+
+    public function ItemSales(){
+        return $this->hasMany('App\Models\ItemSale');
+    }
+
 }

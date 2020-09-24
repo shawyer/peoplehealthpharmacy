@@ -11,4 +11,8 @@ class Item extends Model
     protected $primaryKey = 'id';
     public $incrementing = true;
     public $timestamps = false;
+
+    public function itemsales(){
+        return $this->hasMany('App\Models\ItemSale', 'Items_Id');
+    }
 }
