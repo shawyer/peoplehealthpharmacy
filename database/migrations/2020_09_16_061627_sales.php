@@ -16,7 +16,6 @@ class Sales extends Migration
         Schema::create('Sales', function (Blueprint $table) {
             $table->id("id");
             $table->timestamps();
-           
         });
     }
 

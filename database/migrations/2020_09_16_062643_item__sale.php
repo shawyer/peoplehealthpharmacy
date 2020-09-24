@@ -22,6 +22,7 @@ class ItemSale extends Migration
             $table->foreign("Items_id")->references('id')->on('Items')->onDelete('cascade');
             $table->foreign("Sales_Id")->references('id')->on('Sales')->onDelete('cascade');
             $table->integer("Item_Sold");
+            $table->timestamps();
         });
     }
 

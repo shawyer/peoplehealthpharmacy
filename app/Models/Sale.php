@@ -13,7 +13,7 @@ class Sale extends Model
     public $incrementing = true;
 
     public function ItemSales(){
-        return $this->hasMany('App\Models\ItemSale');
+        return $this->belongsToMany('App\Models\Item', 'itemsale', 'Sales_Id', 'Items_Id')->withPivot(['Item_Sold'])->withTimestamps();
     }
 
 }

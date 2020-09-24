@@ -18,6 +18,7 @@ class Items extends Migration
             $table->id('id');
             $table->string("Item_Name");
             $table->integer("Item_Remaining");
+            $table->timestamps();
         });
     }
 

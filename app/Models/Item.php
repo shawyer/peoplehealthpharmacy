@@ -13,6 +13,6 @@ class Item extends Model
     public $timestamps = false;
 
     public function itemsales(){
-        return $this->hasMany('App\Models\ItemSale', 'Items_Id');
+        return $this->belongsToMany('App\Models\Sale', 'itemsale', 'Items_Id', 'Sales_Id')->withPivot(['Item_Sold']);
     }
 }
