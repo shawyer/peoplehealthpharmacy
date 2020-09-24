@@ -5,14 +5,15 @@
    <label> Change Item Name </label> </br>
    <input type="text" name="Item_Names" placeholder="From"> </br>
    <input type="text" name="Item_Name_Change" placeholder="To"> </br>
-   <button type="submit" text="submit" value="Change"> Change </button> </br> 
+   <button type="submit" text="submit" value="Change"> Change </button> </br>
    </form>
+
    <form method="post" action="{{route('EditItemQuantity')}}">
    {{csrf_field()}}
    <label> Change Item Qty </label> </br>
    <input type="text" name="Item_Name_Quantity" placeholder="Item Quantity to Change"> </br>
    <select name="operation" id="operation"></br>
-  <option value="remove">remove</option> 
+  <option value="remove">remove</option>
   <option value="add">add</option>
 </select></br>
    <input type="text" name="Item_Quantity" placeholder="Number to add or remove"> </br>
@@ -26,4 +27,3 @@
    <button type="submit" text="submit" value="Change"> Change </button> </br>
 </form>
 </div>
-
