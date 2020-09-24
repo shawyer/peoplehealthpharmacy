@@ -9,7 +9,6 @@ use DB;
 class AddController extends Controller
 {
     public function submit(Request $request) { 
-        
         $Item = new Item(); //Create new item
         $Item->Item_Name = $request->input("Item_Name"); // set item name
         $Item->Item_Remaining = $request->input("Item_Remaining"); // set item qty remaining 

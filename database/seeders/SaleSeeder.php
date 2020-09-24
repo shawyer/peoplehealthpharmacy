@@ -15,16 +15,13 @@ class SaleSeeder extends Seeder
      */
     public function run()
     {
-        $items = rand(1,20);
-        $itemSold = rand(1,20);
-        Item::factory()->times(200)->create();
+        Item::factory()->times(20)->create();
         Sale::factory()
+            ->times(200)
             ->hasAttached(
-                Item::factory()->count($items),
-                ['Item_Sold' => $itemSold]
+                Item::factory()->count(rand(1,20)),
+                ['Item_Sold' => rand(1,20)]
             )
-            // ->hasItems($items)
-            ->times(5)
             ->create();
     }
 }
