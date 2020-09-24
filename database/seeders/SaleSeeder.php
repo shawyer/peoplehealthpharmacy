@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Item;
 use App\Models\Sale;
 use Illuminate\Database\Seeder;
 
@@ -15,9 +16,15 @@ class SaleSeeder extends Seeder
     public function run()
     {
         $items = rand(1,20);
+        $itemSold = rand(1,20);
+        Item::factory()->times(200)->create();
         Sale::factory()
-            ->times(100)
-            ->hasItemSales($items)
+            ->hasAttached(
+                Item::factory()->count($items),
+                ['Item_Sold' => $itemSold]
+            )
+            // ->hasItems($items)
+            ->times(5)
             ->create();
     }
 }

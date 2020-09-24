@@ -23,7 +23,7 @@ class SaleFactory extends Factory
     public function definition()
     {
         return [
-            
+            'created_at' => $this->faker->dateTimeThisYear('+1 month')
         ];
     }
 }
