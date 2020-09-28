@@ -40,6 +40,9 @@ Route::post('/add','App\Http\Controllers\AddController@index')->name('add');
 
 Route::post('/post-add','App\Http\Controllers\AddController@submit')->name('submit');
 
+Route::get('/displaymonth', 'App\Http\Controllers\DisplayController@displayMonthlyItems');
+
+
 Route::post('/post-sale','App\Http\Controllers\AddController@sale')->name('sale');
 Route::post('/edit-item','App\Http\Controllers\EditController@EditItem')->name('EditItem');
 Route::post('/edit-item-Quantity','App\Http\Controllers\EditController@EditItemQuantity')->name('EditItemQuantity');
