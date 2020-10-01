@@ -29,25 +29,20 @@ Route::get('/sales', function () {
 Route::get('/EditItem', function () {
     return view('Edititem');
 });
-
+Route::get('/Delete', function () {
+    return view('deletesale');
+});
 
 Route::get('/display', [DisplayController::class, 'getItems']);
-
 Route::get('/displayItem/{itemName}', 'App\Http\Controllers\DisplayController@displayItemInfo')->name('displayItem');
-
 Route::post('/add','App\Http\Controllers\AddController@index')->name('add');
-
-
 Route::post('/post-add','App\Http\Controllers\AddController@submit')->name('submit');
-
 Route::get('/displaymonth', 'App\Http\Controllers\DisplayController@displayMonthlyItems');
-
-
 Route::post('/post-sale','App\Http\Controllers\AddController@sale')->name('sale');
 Route::post('/edit-item','App\Http\Controllers\EditController@EditItem')->name('EditItem');
 Route::post('/edit-item-Quantity','App\Http\Controllers\EditController@EditItemQuantity')->name('EditItemQuantity');
 Route::post('/edit-itemSale-Quantity','App\Http\Controllers\EditController@EditItemSaleAmount')->name('EditItemSaleAmount');
 Route::post('/get-sale','App\Http\Controllers\GetController@get')->name('get');
 Route::post('/delete-sale','App\Http\Controllers\DeleteController@delete')->name('delete');
-
 Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home');
+
