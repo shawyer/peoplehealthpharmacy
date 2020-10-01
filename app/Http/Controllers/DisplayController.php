@@ -26,7 +26,11 @@ class DisplayController extends Controller
     }
 
     public function displayMonthlyItems(){
-        $monthSales = DB::table('sales')->join('itemsale','sales.id', '=', 'itemsale.Sales_Id')->join('items','itemsale.Items_Id', '=', 'items.id')->whereMonth('sales.created_at', Carbon::now()->month)->get();
+        $monthSales = DB::table('sales')
+        ->join('itemsale','sales.id', '=', 'itemsale.Sales_Id')
+        ->join('items','itemsale.Items_Id', '=', 'items.id')
+        ->select('items.Item_Name', 'items.Item_Remaining', 'itemsale.Item_Sold', 'sales.created_at')
+        ->whereMonth('sales.created_at', Carbon::now()->month)->get();
         #$monthSales = \App\Models\Sale::all();
         #dd($monthSales);
         return view ('monthlysales', compact('monthSales'));
