@@ -20,7 +20,7 @@ class DisplayController extends Controller
     }
 
     public function displayItemInfo($itemName){
-        #$item = DB::table('items')->('Item_Name', '=', $itemName);
+        #$items = DB::table('items')->join('itemsale','items.id','=', 'itemsale.Items_Id');
         $item = \App\Models\Item::all()->firstWhere('Item_Name', $itemName);
         return view ('displayItem', compact('item'));
     }
