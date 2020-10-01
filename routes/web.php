@@ -32,6 +32,9 @@ Route::get('/EditItem', function () {
 Route::get('/Delete', function () {
     return view('deletesale');
 });
+Route::get('/getsale', function () {
+    return view('getsale');
+});
 
 Route::get('/display', [DisplayController::class, 'getItems']);
 Route::get('/displayItem/{itemName}', 'App\Http\Controllers\DisplayController@displayItemInfo')->name('displayItem');
