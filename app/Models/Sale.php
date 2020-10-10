@@ -12,8 +12,8 @@ class Sale extends Model
     protected $primaryKey = 'id';
     public $incrementing = true;
 
-    public function ItemSales(){
-        return $this->hasMany('App\Models\ItemSale', 'Sales_Id');
+    public function items(){
+        return $this->belongsToMany('App\Models\Item', 'itemsale', 'Sales_Id', 'Items_Id')->withPivot(['Item_Sold']);
     }
 
 }

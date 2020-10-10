@@ -12,7 +12,7 @@ class Item extends Model
     public $incrementing = true;
     public $timestamps = false;
 
-    public function sales(){
+    public function sales () {
         return $this->belongsToMany('App\Models\Sale', 'itemsale', 'Items_Id', 'Sales_Id')->withPivot(['Item_Sold']);
     }
 }
