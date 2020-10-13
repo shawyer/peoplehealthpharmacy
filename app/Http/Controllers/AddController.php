@@ -12,6 +12,7 @@ class AddController extends Controller
         $Item = new Item(); //Create new item
         $Item->Item_Name = $request->input("Item_Name"); // set item name
         $Item->Item_Remaining = $request->input("Item_Remaining"); // set item qty remaining 
+        $Item->Item_Category = $request->input("Item_Category");
         $Item->save(); //push to table
         return view("confirmation"); // head to confirmation page. 
     }

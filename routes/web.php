@@ -35,11 +35,27 @@ Route::get('/Delete', function () {
 Route::get('/getsale', function () {
     return view('getsale');
 });
+Route::get('/monthlyPrediciton', function () {
+    return view('mpredicition');
+});
+Route::get('/weeklyPrediciton', function () {
+    return view('wpredicition');
+});
+Route::get('/weeklyCategoryPrediciton', function () {
+    return view('wcategorypredicition');
+});
+Route::get('/monthlyCategoryPrediciton', function () {
+    return view('mcategorypredicition');
+});
 
 Route::get('/display', [DisplayController::class, 'getItems']);
 Route::get('/displayItem/{itemName}', 'App\Http\Controllers\DisplayController@displayItemInfo')->name('displayItem');
 Route::post('/add','App\Http\Controllers\AddController@index')->name('add');
 Route::post('/post-add','App\Http\Controllers\AddController@submit')->name('submit');
+Route::post('/post-mPredicitons','App\Http\Controllers\prediction@displayMonthlyPrediciton')->name('monthly');
+Route::post('/post-mCategoryPredicitons','App\Http\Controllers\prediction@displayMonthlyCategoryPrediciton')->name('monthlyC');
+Route::post('/post-wCategoryPredicitons','App\Http\Controllers\prediction@displayWeeklyCategoryPrediciton')->name('monthlyW');
+Route::post('/post-wPredicitons','App\Http\Controllers\prediction@displayWeeklyPrediciton')->name('weekly');
 Route::get('/displaymonth', 'App\Http\Controllers\DisplayController@displayMonthlyItems');
 Route::post('/post-sale','App\Http\Controllers\AddController@sale')->name('sale');
 Route::post('/edit-item','App\Http\Controllers\EditController@EditItem')->name('EditItem');

@@ -22,7 +22,6 @@ class GetController extends Controller
       $itemsold['Item_Sold']=$itemSale['Item_Sold'];
       $itemsolds[]=$itemsold;
     }
-
     return view("Salerecord",compact('saleId','itemsolds')); // head to confirmation page.
   }
 

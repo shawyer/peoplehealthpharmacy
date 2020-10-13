@@ -17,6 +17,7 @@ class Items extends Migration
         Schema::create('Items', function (Blueprint $table) {
             $table->id('id');
             $table->string("Item_Name");
+            $table->string("Item_Category");
             $table->integer("Item_Remaining");
             $table->timestamps();
         });

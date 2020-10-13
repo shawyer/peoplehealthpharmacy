@@ -11,7 +11,6 @@ class Item extends Model
     protected $primaryKey = 'id';
     public $incrementing = true;
     public $timestamps = false;
-
     public function sales () {
         return $this->belongsToMany('App\Models\Sale', 'itemsale', 'Items_Id', 'Sales_Id')->withPivot(['Item_Sold']);
     }
