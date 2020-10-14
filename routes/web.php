@@ -48,7 +48,7 @@ Route::get('/monthlyCategoryPrediciton', function () {
     return view('mcategorypredicition');
 });
 
-Route::get('/display', [DisplayController::class, 'getItems']);
+Route::get('/display', [DisplayController::class, 'getItems'])->name('display');
 Route::get('/displayItem/{itemName}', 'App\Http\Controllers\DisplayController@displayItemInfo')->name('displayItem');
 Route::post('/add','App\Http\Controllers\AddController@index')->name('add');
 Route::post('/post-add','App\Http\Controllers\AddController@submit')->name('submit');
@@ -64,4 +64,5 @@ Route::post('/edit-itemSale-Quantity','App\Http\Controllers\EditController@EditI
 Route::post('/get-sale','App\Http\Controllers\GetController@get')->name('get');
 Route::post('/delete-sale','App\Http\Controllers\DeleteController@delete')->name('delete');
 Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home');
+Route::get('/cvsdownload', 'App\Http\Controllers\GenerateCVS@GenerateCVS')->name('csv');
 
