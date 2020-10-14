@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>Hey</h1>
+<h1>Display Monthly Sales</h1>
 <div class="container">
     @foreach ($monthSales as $monthSale)
         <ul>
