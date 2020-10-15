@@ -1,0 +1,301 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* format for the search bar*/
+#SearchBar {
+	position: absolute;
+	top: 35px;
+	left: 580px;
+	height: 45px;
+}
+
+#ReportsText {
+	position: absolute;
+	top: 40px;
+	left: 350px;
+}
+
+#SearchIcon {
+	position: absolute;
+	top: 40px;
+	left: 1000px;
+}
+
+#SearchInput {
+	position: absolute;
+	top: 45px;
+	left: 600px;
+	
+	height: 25px;
+	width: 350px;
+	
+	background-color: #EDF1F5;	
+	border: none;
+}
+
+/* format for the filter section */
+#BgRight {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 1600px;
+	right: 0;
+	
+	width: 320px;
+/*	height: 1080px;*/
+}
+
+#FilterIcon {
+	position: absolute;
+	top: 20px;
+	left: 1620px;
+	
+	width: 30px;
+	height: 25px;
+}
+
+#FiltersText {
+	position: absolute;
+	top: 15px;
+	left: 1725px;
+	
+	width: 80px;
+	height: 40px;
+}
+
+/*input[type="submit"] {
+	
+}*/
+#SubmitButton {
+	position: absolute;
+	top: 350px;
+	left: 1675px;
+}
+
+input[type="checkbox"] {
+	
+  	width: 30px; 
+  	height: 30px; 
+}
+
+#checkbox1 {
+	position: absolute;
+	top: 70px;
+	left: 1620px;
+}
+#checkbox2 {
+	position: absolute;
+	top: 130px;
+	left: 1620px;
+}
+#checkbox3 {
+	position: absolute;
+	top: 190px;
+	left: 1620px;
+}
+#checkbox4 {
+	position: absolute;
+	top: 250px;
+	left: 1620px;
+}
+
+#checkbox1-1 {
+	position: absolute;
+	top: 70px;
+	left: 1795px;
+}
+#checkbox2-1 {
+	position: absolute;
+	top: 130px;
+	left: 1795px;
+}
+#checkbox3-1 {
+	position: absolute;
+	top: 190px;
+	left: 1795px;
+}
+#checkbox4-1 {
+	position: absolute;
+	top: 250px;
+	left: 1795px;
+}
+
+#checkbox1-2 {
+	position: absolute;
+	top: 130px;
+	left: 1875px;
+}#checkbox2-2 {
+	position: absolute;
+	top: 190px;
+	left: 1875px;
+}
+#checkbox3-2 {
+	position: absolute;
+	top: 250px;
+	left: 1875px;
+}
+#checkbox4-2 {
+	position: absolute;
+	top: 70px;
+	left: 1875px;
+}
+
+#DateText {
+	position: absolute;
+	top: 70px;
+	left: 1660px;
+}
+#PersonText {
+	position: absolute;
+	top: 130px;
+	left: 1660px;
+}
+#ItemText {
+	position: absolute;
+	top: 190px;
+	left: 1660px;
+}
+#PriceText {
+	position: absolute;
+	top: 250px;
+	left: 1660px;
+}
+
+#ArrowDown1 {
+	position: absolute;
+	top: 70px;
+	left: 1770px;
+}
+#ArrowDown2 {
+	position: absolute;
+	top: 130px;
+	left: 1770px;
+}
+#ArrowDown3 {
+	position: absolute;
+	top: 190px;
+	left: 1770px;
+}
+#ArrowDown4 {
+	position: absolute;
+	top: 250px;
+	left: 1770px;
+}
+
+#ArrowUp1 {
+	position: absolute;
+	top: 70px;
+	left: 1850px;
+}
+#ArrowUp2 {
+	position: absolute;
+	top: 130px;
+	left: 1850px;
+}
+#ArrowUp3 {
+	position: absolute;
+	top: 190px;
+	left: 1850px;
+}
+#ArrowUp4 {
+	position: absolute;
+	top: 250px;
+	left: 1850px;
+}
+
+#ViewText {
+	position: absolute;
+	top: 500px;
+	left: 1740px;
+}
+
+/* format for buttons */
+.large_buttons{
+    position: absolute;
+    background-color: #6D11EF; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3em;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+}
+
+#weekly {
+    top: 600px;
+  	left: 1675px;
+}
+
+#monthly {
+    top: 750px;
+  	left: 1675px;
+}
+
+#DownloadButton {
+	position: absolute;
+	top: 900px;
+	left: 1675px;
+}
+
+/* format for nav */
+@media (max-width: 1920px){
+}
+
+#overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#logo {
+position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+#activ_col {
+ position: absolute;
+  top: 130px;
+  left: 22px;
+}
+
+#reports {
+position: absolute;
+  top: 210px;
+  left: 70px;
+}
+
+#predictions {
+ position: absolute;
+  top: 400px;
+  left: 50px;
+}
+
+#new_sale {
+	 position: absolute;
+  top: 600px;
+  left: 60px;
+}
+
+#modify_sale {
+position: absolute;
+  top: 800px;
+  left: 60px;
+}
+
+/* format for table */
+#TableBg {
+	position: absolute;
+	top: 125px;
+	left:250px;
+}
+
+#TableTitle {
+	position: absolute;
+	top: 180px;
+	left: 825px;
+}
+
+

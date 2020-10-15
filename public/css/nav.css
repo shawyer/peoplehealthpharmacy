@@ -1,0 +1,47 @@
+@media (max-width: 1920px){
+}
+
+#overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#logo {
+position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+#activ_col {
+ position: absolute;
+  top: 130px;
+  left: 22px;
+}
+
+
+#reports {
+position: absolute;
+  top: 210px;
+  left: 70px;
+}
+
+#predictions {
+ position: absolute;
+  top: 400px;
+  left: 50px;
+}
+
+#new_sale {
+	 position: absolute;
+  top: 600px;
+  left: 60px;
+}
+
+#modify_sale {
+position: absolute;
+  top: 800px;
+  left: 60px;
+}
+
+

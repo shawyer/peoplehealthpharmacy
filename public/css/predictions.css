@@ -1,0 +1,81 @@
+@media (max-width: 1920px){
+}
+
+#overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#logo {
+position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+#activ_col {
+ position: absolute;
+  top: 335px;
+  left: 22px;
+}
+
+
+#reports {
+position: absolute;
+  top: 210px;
+  left: 70px;
+}
+
+#predictions {
+ position: absolute;
+  top: 400px;
+  left: 50px;
+}
+
+#new_sale {
+	 position: absolute;
+  top: 600px;
+  left: 60px;
+}
+
+#modify_sale {
+position: absolute;
+  top: 800px;
+  left: 60px;
+}
+
+.large_buttons{	
+	position: absolute;
+	/* this is the style of the button itseld */
+  	background-color: #6D11EF; /* purple */
+	border: none;
+  	color: white;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 3em;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+}
+
+#weekly {
+	top: 950px;
+  left: 680px;
+}
+
+#monthly {
+	top: 950px;
+  left: 1260px;
+}
+
+#background_graph {
+	position: absolute;
+	top: 50px;
+	left: 400px;
+}
+
+#sales_title {
+	position: absolute;
+	top: 130px;
+	left: 950px;
+}

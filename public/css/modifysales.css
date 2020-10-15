@@ -1,0 +1,125 @@
+@media (max-width: 1920px){
+}
+
+#overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#logo {
+position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+#activ_col {
+ position: absolute;
+  top: 730px;
+  left: 22px;
+}
+
+
+#reports {
+position: absolute;
+  top: 210px;
+  left: 70px;
+}
+
+#predictions {
+ position: absolute;
+  top: 400px;
+  left: 50px;
+}
+
+#new_sale {
+	 position: absolute;
+  top: 600px;
+  left: 60px;
+}
+
+#modify_sale {
+position: absolute;
+  top: 800px;
+  left: 60px;
+}
+
+.nav-images {
+	margin: 0px;
+}
+
+/* format for the search bar*/
+#SearchBar {
+	position: absolute;
+	top: 35px;
+	left: 580px;
+	height: 45px;
+}
+
+#ModifyText {
+	position: absolute;
+	top: 40px;
+	left: 350px;
+}
+
+#SearchIcon {
+	position: absolute;
+	top: 40px;
+	left: 1000px;
+}
+
+#SearchInput {
+	position: absolute;
+	top: 45px;
+	left: 600px;
+	
+	height: 25px;
+	width: 350px;
+	
+	background-color: #EDF1F5;	
+	border: none;
+}
+
+/* format for table */
+#TableBg {
+	position: absolute;
+	top: 125px;
+	left:300px;
+}
+
+#TableTitle {
+	position: absolute;
+	top: 180px;
+	left: 900px;
+}
+
+/* format for buttons */
+.large_buttons{
+    position: absolute;
+    background-color: #6D11EF; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3em;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+}
+
+#edit {
+    top: 350px;
+  	left: 1700px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#delete {
+    top: 700px;
+  	left: 1680px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	
+}
+
+
