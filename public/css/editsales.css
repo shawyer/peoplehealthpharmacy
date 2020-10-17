@@ -1,0 +1,142 @@
+@media (max-width: 1920px){
+}
+
+#overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#logo {
+position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+#activ_col {
+ position: absolute;
+  top: 730px;
+  left: 22px;
+}
+
+
+#reports {
+position: absolute;
+  top: 210px;
+  left: 70px;
+}
+
+#predictions {
+ position: absolute;
+  top: 400px;
+  left: 50px;
+}
+
+#new_sale {
+	 position: absolute;
+  top: 600px;
+  left: 60px;
+}
+
+#modify_sale {
+position: absolute;
+  top: 800px;
+  left: 60px;
+}
+
+.nav-images {
+	margin: 0px;
+}
+
+#back_image {
+	position: absolute;
+	top: 50px;
+	left: 300px;
+}
+
+#edit_form {
+	position: absolute;
+	top: 360px;
+	left: 950px;
+}
+
+#push_image {
+	position: absolute;
+	top: 90px;
+	left: 450px;
+}
+
+/* form stuff */
+
+.submit_form {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+
+.large_buttons{	
+	position: absolute;
+	/* this is the style of the button itseld */
+  	background-color: #6D11EF; /* purple */
+	border: none;
+  	color: white;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+	margin: 50px;
+  	font-size: 3em;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+}
+
+
+.form_inputs {
+	position: relative;
+	left: 900px;
+}
+
+#fname {
+	position: absolute;
+	width: 300px;
+	height: 50px;
+	top: 520px;
+	left: 1400px;
+	border: 0;
+	background: #F4FAFF;
+}
+
+#dDate {
+	position: absolute;
+	width: 300px;
+	height: 50px;
+	top: 590px;
+	left: 1400px;
+	border: 0;
+	background: #FFECEC;
+}
+
+#iItem {
+	position: absolute;
+	width: 300px;
+	height: 50px;
+	top: 660px;
+	left: 1400px;
+	border: 0;
+	background: #F0EFF7;
+}
+
+#pPrice {
+	position: absolute;
+	width: 300px;
+	height: 50px;
+	top: 730px;
+	left: 1400px;
+	border: 0;
+	background: #F1FFE1;
+}
+
+#submit_pos {
+	position: absolute;
+	top: 780px;
+	left: 1200px;
+}
+
