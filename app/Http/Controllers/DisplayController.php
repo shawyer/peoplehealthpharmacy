@@ -28,17 +28,25 @@ class DisplayController extends Controller
   public function displayMonthlyItems(Request $request){
         $order=$request->input('sort');
         $sort=$request->input('Criteria');
+        $filter=$request->input('filter');
+        $size=0;
+        if(!empty($filter))
+        {
+          $monthSales = DB::table('sales')
+          ->join('itemsale','sales.id', '=', 'itemsale.Sales_Id')
+          ->join('items','itemsale.Items_Id', '=', 'items.id')
+          ->select('items.Item_Name', 'items.Item_Remaining', 'itemsale.Item_Sold', 'sales.created_at')
+          ->where('Item_Name',$filter)
+          ->whereMonth('sales.created_at', Carbon::now()->month)->get();
+        }else{
         $monthSales = DB::table('sales')
         ->join('itemsale','sales.id', '=', 'itemsale.Sales_Id')
         ->join('items','itemsale.Items_Id', '=', 'items.id')
         ->select('items.Item_Name', 'items.Item_Remaining', 'itemsale.Item_Sold', 'sales.created_at')
-        //->order('itemsale.Item_Sold')
         ->whereMonth('sales.created_at', Carbon::now()->month)->get();
         #$monthSales = \App\Models\Sale::all();
         #dd($monthSales);
-        //$sort='qty';//'name''date';'qty';
-        //$order='d';//'a''d';
-        $monthSales=$this->sortbyQty($order,$monthSales);
+        }
 
         if($sort=='name')
         {
@@ -54,7 +62,6 @@ class DisplayController extends Controller
 
         return view ('monthlysales', compact('monthSales'));
     }
-
 
     public function sortbyName($order,$array)
     {
