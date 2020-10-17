@@ -4,6 +4,6 @@
    {{csrf_field()}}
    <label>Sale ID </label>
    <input type="text" name="saleId"><br>
-   <button type="submit" text="submit" value="submit"> Submit </submit>
+   <button type="submit" text="submit" value="submit"> Submit </button>
 </form>
 </div>

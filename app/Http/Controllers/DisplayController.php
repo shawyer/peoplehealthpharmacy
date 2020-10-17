@@ -26,8 +26,8 @@ class DisplayController extends Controller
     }
 
   public function displayMonthlyItems(Request $request){
-        //$order=$request->input('sort');
-        //$sort=$request->input('Criteria');
+        $order=$request->input('sort');
+        $sort=$request->input('Criteria');
         $monthSales = DB::table('sales')
         ->join('itemsale','sales.id', '=', 'itemsale.Sales_Id')
         ->join('items','itemsale.Items_Id', '=', 'items.id')
@@ -36,8 +36,8 @@ class DisplayController extends Controller
         ->whereMonth('sales.created_at', Carbon::now()->month)->get();
         #$monthSales = \App\Models\Sale::all();
         #dd($monthSales);
-        $sort='qty';//'name''date';'qty';
-        $order='d';//'a''d';
+        //$sort='qty';//'name''date';'qty';
+        //$order='d';//'a''d';
         $monthSales=$this->sortbyQty($order,$monthSales);
 
         if($sort=='name')
