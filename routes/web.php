@@ -21,31 +21,31 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/add', function () {
-    return view('add');
+    return view('add'); // manage stock page 
 });
 Route::get('/sales', function () {
-    return view('sales');
+    return view('sales'); // amount sold and item sold for add sales
 });
 Route::get('/EditItem', function () {
-    return view('Edititem');
+    return view('EditItem'); // will go under modify
 });
 Route::get('/Delete', function () {
-    return view('deletesale');
+    return view('deletesale'); // will go under modify 
 });
 Route::get('/getsale', function () {
-    return view('getsale');
+    return view('getsale'); // will go under modify for searching 
 });
 Route::get('/monthlyPrediciton', function () {
-    return view('mpredicition');
+    return view('mpredicition'); // predictions page
 });
 Route::get('/weeklyPrediciton', function () {
-    return view('wpredicition');
+    return view('wpredicition'); // predictions page
 });
 Route::get('/weeklyCategoryPrediciton', function () {
-    return view('wcategorypredicition');
+    return view('wcategorypredicition'); // predictions page
 });
 Route::get('/monthlyCategoryPrediciton', function () {
-    return view('mcategorypredicition');
+    return view('mcategorypredicition'); // predictions page
 });
 
 Route::get('/display', [DisplayController::class, 'getItems']);
