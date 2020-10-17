@@ -25,7 +25,9 @@ class DisplayController extends Controller
         return view ('displayItem', compact('item'));
     }
 
-  public function displayMonthlyItems(/*$sort*/){
+  public function displayMonthlyItems(Request $request){
+        //$order=$request->input('sort');
+        //$sort=$request->input('Criteria');
         $monthSales = DB::table('sales')
         ->join('itemsale','sales.id', '=', 'itemsale.Sales_Id')
         ->join('items','itemsale.Items_Id', '=', 'items.id')
@@ -34,18 +36,21 @@ class DisplayController extends Controller
         ->whereMonth('sales.created_at', Carbon::now()->month)->get();
         #$monthSales = \App\Models\Sale::all();
         #dd($monthSales);
-        $sort='name';//'date';'qty';
+        $sort='qty';//'name''date';'qty';
+        $order='d';//'a''d';
+        $monthSales=$this->sortbyQty($order,$monthSales);
 
         if($sort=='name')
         {
-          $monthSales=$this->sortbyName('d',$monthSales);
+          $monthSales=$this->sortbyName($order,$monthSales);
         }
-        else if($sort='date'){
-          $monthSales=$this->sortbyDate('d',$monthSales);
+        else if($sort=='qty') {
+          $monthSales=$this->sortbyQty($order,$monthSales);
         }
-        elseif ($sort='qty') {
-          $monthSales=$this->sortbyQty('d',$monthSales);
+        else if($sort=='date'){
+          $monthSales=$this->sortbyDate($order,$monthSales);
         }
+
 
         return view ('monthlysales', compact('monthSales'));
     }
@@ -60,7 +65,7 @@ class DisplayController extends Controller
         {
           for($j=0;$j<$size-1;$j++)
           {
-            if($array[$j]->Item_Name>=$array[$j+1]->Item_Name)
+            if($array[$j]->Item_Name>$array[$j+1]->Item_Name)
             {
               $temp=$array[$j];
               $array[$j]=$array[$j+1];
@@ -74,7 +79,7 @@ class DisplayController extends Controller
         {
           for($j=0;$j<$size-1;$j++)
           {
-            if($array[$j]->Item_Name<=$array[$j+1]->Item_Name)
+            if($array[$j]->Item_Name<$array[$j+1]->Item_Name)
             {
               $temp=$array[$j];
               $array[$j]=$array[$j+1];
@@ -95,7 +100,7 @@ class DisplayController extends Controller
         {
           for($j=0;$j<$size-1;$j++)
           {
-            if($array[$j]->created_at>=$array[$j+1]->created_at)
+            if($array[$j]->created_at>$array[$j+1]->created_at)
             {
               $temp=$array[$j];
               $array[$j]=$array[$j+1];
@@ -109,7 +114,7 @@ class DisplayController extends Controller
         {
           for($j=0;$j<$size-1;$j++)
           {
-            if($array[$j]->created_at<=$array[$j+1]->created_at )
+            if($array[$j]->created_at<$array[$j+1]->created_at )
             {
               $temp=$array[$j];
               $array[$j]=$array[$j+1];
@@ -129,7 +134,7 @@ class DisplayController extends Controller
         {
           for($j=0;$j<$size-1;$j++)
           {
-            if($array[$j]->Item_Sold>=$array[$j+1]->Item_Sold)
+            if($array[$j]->Item_Sold>$array[$j+1]->Item_Sold)
             {
               $temp=$array[$j];
               $array[$j]=$array[$j+1];
@@ -143,7 +148,7 @@ class DisplayController extends Controller
         {
           for($j=0;$j<$size-1;$j++)
           {
-            if($array[$j]->Item_Sold<=$array[$j+1]->Item_Sold)
+            if($array[$j]->Item_Sold<$array[$j+1]->Item_Sold)
             {
               $temp=$array[$j];
               $array[$j]=$array[$j+1];
