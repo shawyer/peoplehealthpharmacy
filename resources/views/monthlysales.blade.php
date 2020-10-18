@@ -41,7 +41,7 @@ Monthly Sales
         <img src="../Images/ArrowUp.png" alt="Arrows Icon" id="ArrowUp2">
         <img src="../Images/ArrowUp.png" alt="Arrows Icon" id="ArrowUp3">
         <!--<img src="../Images/ArrowUp.png" alt="Arrows Icon" id="ArrowUp4"> -->
-        <form>
+        <form action="" method="post">
 			<input type="checkbox" name="Date" value="Date" id="checkbox1">
 			<input type="checkbox" name="DateDown" value="DateDown" id="checkbox1-1">
 			<input type="checkbox" name="DateUp" value="DateUp" id="checkbox1-2"> 
@@ -58,28 +58,27 @@ Monthly Sales
 			<input type="checkbox" name="PriceDown" value="PriceDown" id="checkbox4-1"> -->
 			<input type="checkbox" name="PriceUp" value="PriceUp" id="checkbox4-2"> 
 			
-			<input type="submit" value="Submit" class="large_buttons" id="SubmitButton"> 
+			<input type="submit" value="Submit" class="large_buttons" id="SubmitButton" formaction="{{route('EditItemSaleAmount')}}"> 
+                <!-- buttons -->
+            <input type="button" value="Weekly" onclick="history.back()" width="320" height="110" class = "large_buttons" id="weekly" {{route('EditItemSaleAmount')}}/>         
+            <input type="button" value="Monthly" onclick="history.back()" width="320" height="110" class = "large_buttons" id="monthly" {{route('EditItemSaleAmount')}} />
 		</form>
 
-        <!-- buttons -->
-
-		
-		<input type="button" value="Weekly" onclick="history.back()" width="320" height="110" class = "large_buttons" id="weekly"/>         
-		<input type="button" value="Monthly" onclick="history.back()" width="320" height="110" class = "large_buttons" id="monthly" />
+        
     </div>
     
     <div>
 		<!-- table elements -->
 		<img src="../Assets/Reports Assets/monthly sale data background.png" alt="table bg" width="1300" id="TableBg">
 		<img src="../Assets/Reports Assets/TableTitle.png" alt="title" id="TableTitle">
-		
+		@foreach ($monthSales as $monthSale)
+            <ul>
+                <li>Sale Date: {{$monthSale->created_at}}</li>
+                <li>Item Name: {{$monthSale->Item_Name}}</li>
+                <li>Total Sold: {{$monthSale->Item_Sold}}</li>
+            </ul>
+        @endforeach
 	</div>
-    @foreach ($monthSales as $monthSale)
-        <ul>
-            <li>Sale Date: {{$monthSale->created_at}}</li>
-            <li>Item Name: {{$monthSale->Item_Name}}</li>
-            <li>Total Sold: {{$monthSale->Item_Sold}}</li>
-        </ul>
-    @endforeach
+    
 
 @endsection
