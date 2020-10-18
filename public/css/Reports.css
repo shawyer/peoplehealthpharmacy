@@ -223,6 +223,22 @@ input[type="checkbox"] {
     font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
 }
 
+#search {
+	position: absolute;
+	top: 40px;
+	left: 1040px;
+	width: 100px;
+	
+	background-color: #6D11EF; 
+	padding: 10px 5px;
+	text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	border: none;
+    color: white;
+	font-size: 1em;
+}
+
 #weekly {
     top: 600px;
   	left: 1675px;
@@ -244,9 +260,9 @@ input[type="checkbox"] {
 }
 
 #overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #logo {
@@ -257,34 +273,42 @@ position: absolute;
 
 #activ_col {
  position: absolute;
-  top: 130px;
+  top: 125px;
   left: 22px;
 }
 
+
 #reports {
 position: absolute;
-  top: 210px;
+  top: 200px;
   left: 70px;
 }
 
 #predictions {
  position: absolute;
-  top: 400px;
+  top: 350px;
   left: 50px;
 }
 
 #new_sale {
-	 position: absolute;
-  top: 600px;
+     position: absolute;
+  top: 500px;
   left: 60px;
 }
 
 #modify_sale {
 position: absolute;
-  top: 800px;
+  top: 650px;
   left: 60px;
 }
-
+#add_stock {
+    position: absolute;
+    top: 800px;
+    left: 60px;
+}
+.nav-images {
+    margin: 0px;
+}
 /* format for table */
 #TableBg {
 	position: absolute;

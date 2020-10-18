@@ -3,33 +3,35 @@
 AddSales
 @endsection
 @section('css')
-   <link href="{{asset('css/addsales.css')}}" rel="stylesheet" type="text/css">
+   <link href="{{asset('css/addstock.css')}}" rel="stylesheet" type="text/css">
 @endsection
 @section('verticalnav')
-@include('layouts.components.verticalnavadd')
+@include('layouts.components.verticalnavstock')
 @endsection
 @section('content')
 
-
- 	<img src="{{ asset('Assets/background/background huge image') }}.png" alt="" width="1550" height="1000" id="background_art"/>
-	<img src="{{ asset('Assets/background/new sale background') }}.png" alt="" width="750" height="790" id="form_background"/>
-	<img src="{{ asset('Assets/background/State Cases Territor') }}.png" alt="" width="300" height="65" id="sale_form_title"/>
+ 	<img src="../Assets/Add Stock Assets/State Cases Territor.png" alt="" id="AddStockText" />
+	<img src="../Assets/Add Stock Assets/background form.png" alt="" id="img1" />
+	<img src="../Assets/Add Stock Assets/background form.png" alt="" id="img2" />
+	<img src="../Assets/Add Stock Assets/Add Stock Bg.png" alt="" id="BigBg" />
 	
-
-	<img src="{{ asset('Assets/passive/Group 9876.png') }}" alt="" width="250" height="360" id="passive-Info"/>
+	<div>
+		<form action="{{route('submit')}}" method="post">
+       {{csrf_field()}}
+			<img src="../Assets/Add Stock Assets/Rectangle Copy 4.png" alt="" id="TableBg" />
+			<img src="../Assets/Add Stock Assets/TableField.png" alt="" id="TableFields" />
+			<img src="../Assets/Add Stock Assets/ItemBg.png" alt="" id="ItemBg" />
+			<img src="../Assets/Add Stock Assets/StockBg.png" alt="" id="StockBg" />
+			<img src="../Assets/Add Stock Assets/CategoryBg.png" alt="" id="CategoryBg" />
+			
+			<input type="text" placeholder="Item's name" id="ItemInput" name="Item_Name">
+			<input type="text" placeholder="Amount remaining" id="StockInput" name="Item_Remaining">
+			<input type="text" placeholder="Item's category" id="CategoryInput" name="Item_Category">
+			
+			<input type="submit" value="Submit" class="large_buttons" id="SubmitButton"> 
+		</form>
+	</div>
 	
-		<form action="/add" class="submit_form" method="post">
-			
-			<input type="text" id="fname" name="fname" value="Grant Imahara" >
-				
-			<input type="date" id="dDate" name="dDate" value="26/09/2020" >
-			
-			<input type="text" id="iItem" name="iItem" value="Panadol"  >
-			
-			<input type="text" id="pPrice" name="pPrice" value="6.99" >
-			
-			<input type="submit" value="Submit" class="large_buttons" id="submit_pos">
-		</form> 
    {{-- <div class="container">
       <form method="post" action="{{route('submit')}}">
       {{csrf_field()}}

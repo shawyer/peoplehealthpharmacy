@@ -6,7 +6,31 @@
 	top: 0;
 	left: 0;
 }
-
+.submit_form {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+.form_inputs {
+	position: relative;
+	left: 900px;
+}
+#item {
+	position: absolute;
+	width: 300px;
+	height: 50px;
+	top: 440px;
+	left: 580px;
+	border: 0;
+	background: #BBB5DA;
+}
+#category {
+	position: absolute;
+	width: 300px;
+	height: 50px;
+	top: 440px;
+	left: 1280px;
+	border: 0;
+	background: #DDE9F7;
+}
 #logo {
 position: absolute;
   top: 30px;
@@ -15,35 +39,39 @@ position: absolute;
 
 #activ_col {
  position: absolute;
-  top: 335px;
+  top: 280px;
   left: 22px;
 }
 
 
 #reports {
 position: absolute;
-  top: 210px;
+  top: 200px;
   left: 70px;
 }
 
 #predictions {
  position: absolute;
-  top: 400px;
+  top: 350px;
   left: 50px;
 }
 
 #new_sale {
 	 position: absolute;
-  top: 600px;
+  top: 500px;
   left: 60px;
 }
 
 #modify_sale {
 position: absolute;
-  top: 800px;
+  top: 650px;
   left: 60px;
 }
-
+#add_stock {
+	position: absolute;
+	top: 800px;
+	left: 60px;
+}
 .large_buttons{	
 	position: absolute;
 	/* this is the style of the button itseld */
@@ -60,22 +88,28 @@ position: absolute;
 
 #weekly {
 	top: 950px;
-  left: 680px;
+  left: 780px;
 }
 
 #monthly {
 	top: 950px;
-  left: 1260px;
+  left: 1360px;
 }
 
 #background_graph {
 	position: absolute;
 	top: 50px;
-	left: 400px;
+	left: 300px;
 }
 
-#sales_title {
+#itemprediction{
 	position: absolute;
-	top: 130px;
-	left: 950px;
+	top: 300px;
+	left: 500px;
 }
+#categoryprediction{
+	position: absolute;
+	top: 300px;
+	left: 1200px;
+}
+

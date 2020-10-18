@@ -17,6 +17,7 @@ class AddController extends Controller
         return view("confirmation"); // head to confirmation page. 
     }
     public function sale(Request $request) {
+        // dd($request->input());
         $Sale = new Sale(); // Create new sale and place timestamps 
         $Sale->save();
         $Item = $request->input("Item_Name"); // get item name

@@ -1,0 +1,165 @@
+/* CSS Document */
+/* format for nav */
+@media (max-width: 1920px){
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#logo {
+position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+#activ_col {
+ position: absolute;
+  top: 730px;
+  left: 22px;
+}
+
+
+#reports {
+position: absolute;
+  top: 200px;
+  left: 70px;
+}
+
+#predictions {
+ position: absolute;
+  top: 350px;
+  left: 50px;
+}
+
+#new_sale {
+     position: absolute;
+  top: 500px;
+  left: 60px;
+}
+
+#modify_sale {
+position: absolute;
+  top: 650px;
+  left: 60px;
+}
+#add_stock {
+    position: absolute;
+    top: 800px;
+    left: 60px;
+}
+.nav-images {
+    margin: 0px;
+}
+
+/* format for background images */
+#AddStockText {
+	position: absolute;
+	top: 60px;
+	left: 385px;
+}
+
+#img1 {
+	position: absolute;
+	top: 200px;
+	left: 430px;
+}
+
+#img2 {
+	position: absolute;
+	top: 870px;
+	left: 430px;
+}
+
+#BigBg {
+	position: absolute;
+	top: 250px;
+	left: 1050px;
+}
+/* format for table */
+#TableBg {
+	position: absolute;
+	top: 320px;
+	left: 300px;
+}
+
+#TableFields {
+	position: absolute;
+	top: 430px;
+	left: 400px;
+}
+
+#ItemBg {
+	position: absolute;
+	top: 430px;
+	left: 600px;
+}
+
+#StockBg {
+	position: absolute;
+	top: 515px;
+	left: 600px;
+}
+
+#CategoryBg {
+	position: absolute;
+	top: 605px;
+	left: 600px;
+}
+
+#ItemInput {
+	position: absolute;
+	top: 440px;
+	left: 610px;
+	
+	height: 25px;
+	width: 250px;
+	
+	background-color: #F0EFF7;	
+	border: none;
+}
+
+#StockInput {
+	position: absolute;
+	top: 525px;
+	left: 610px;
+	
+	height: 25px;
+	width: 250px;
+	
+	background-color: #F1FFE1;	
+	border: none;
+}
+
+#CategoryInput {
+	position: absolute;
+	top: 615px;
+	left: 610px;
+	
+	height: 25px;
+	width: 250px;
+	
+	background-color: #FFECEC;	
+	border: none;
+}
+
+.large_buttons{
+    position: absolute;
+    background-color: #6D11EF; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; 
+    font-size: 3em;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+}
+	
+#SubmitButton {
+	position: absolute;
+	top: 700px;
+	left: 545px;
+}

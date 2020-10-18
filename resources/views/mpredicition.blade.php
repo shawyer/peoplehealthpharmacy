@@ -1,10 +1,25 @@
+@extends('layouts.app')
+@section('title')
+Predictions
+@endsection
+@section('css')
+   <link href="{{asset('css/predictions.css')}}" rel="stylesheet" type="text/css">
+@endsection
+@section('verticalnav')
+@include('layouts.components.verticalnavpredict')
+@endsection
+@section('content')
+   <img src="../Assets/Predictions Assets/Fatality Graph.png" alt="" width = "1600" height="900" id="background_graph"/>
+	<img src="../Assets/Predictions Assets/Group 9880.png" alt="" width = "570" height="460" id="itemprediction"/>
+	<img src="../Assets/Predictions Assets/Group 9959.png" alt="" width = "570" height="460" id="categoryprediction"/>
 
-<div class="container">
-   <form method="post" action="{{route('monthly')}}">
-   {{csrf_field()}}
-   <label> Sales Prediction of Item </label>
-   <input type="text" name="Item_Name"><br>
-   <button type="submit" value="submit"> Submit </submit>
-</form>
-</div>
+   <form action="" class="submit_form" method="post">
+			{{csrf_field()}}
+        <input type="text" id="item" name="Item_Name" value="Enter Item" >
+        <input type="text" id="category" name="Item_Category" value="Enter Category" >
+        
+        <input type="submit" value="Weekly" onclick="history.back()" width="320" height="110" class = "large_buttons" id="weekly" formaction="{{route('weekly')}}"/>
+        <input type="submit" value="Monthly" onclick="history.back()" width="320" height="110" class = "large_buttons" id="monthly" formaction="{{route('monthly')}}"/>
+    </form> 
 
+@endsection

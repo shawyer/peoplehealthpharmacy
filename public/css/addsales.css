@@ -15,38 +15,42 @@ position: absolute;
 
 #activ_col {
  position: absolute;
-  top: 530px;
+  top: 430px;
   left: 22px;
 }
 
 
 #reports {
 position: absolute;
-  top: 210px;
+  top: 200px;
   left: 70px;
 }
 
 #predictions {
  position: absolute;
-  top: 400px;
+  top: 350px;
   left: 50px;
 }
 
 #new_sale {
 	 position: absolute;
-  top: 600px;
+  top: 500px;
   left: 60px;
 }
 
 #modify_sale {
 position: absolute;
-  top: 800px;
+  top: 650px;
   left: 60px;
 }
-
+#add_stock {
+	position: absolute;
+	top: 800px;
+	left: 60px;
+}
 #background_art {
 	position: absolute;
-	top: 80px;
+	top: 50px;top: 80px;
 	left: 300px;
 }
 
@@ -64,7 +68,7 @@ position: absolute;
 
 #form_background {
 	position: absolute;
-	top: 20px;
+	top: 310px;
 	left: 1030px;
 }
 
@@ -116,27 +120,27 @@ position: absolute;
 
 #iItem {
 	position: absolute;
-	width: 300px;
+	width: 200px;
 	height: 50px;
-	top: 380px;
-	left: 1400px;
+	top: 505px;
+	left: 1440px;
 	border: 0;
 	background: #F0EFF7;
 }
 
 #pPrice {
 	position: absolute;
-	width: 300px;
+	width: 200px;
 	height: 50px;
-	top: 480px;
-	left: 1400px;
+	top: 590px;
+	left: 1440px;
 	border: 0;
 	background: #F1FFE1;
 }
 
 #submit_pos {
 	position: absolute;
-	top: 600px;
+	top: 650px;
 	left: 1250px;
 }
 

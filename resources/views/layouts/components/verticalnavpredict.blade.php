@@ -7,14 +7,15 @@
         <img src="../Assets/Navigation/Passive/Reports.png" width="90" height="74" alt="" id="reports" />
     </a>
     
-    <a href="/monthlyPrediciton">
-        <img src="../Assets/Navigation/Passive/Predictions.png" width="132" height="95" alt="" id="predictions" />
-    </a>
-
     <!--Active Colour-->
-    <img src="../Assets/Navigation/Active/New sale.png" width="118" height="80" alt="" id="new_sale" />
+        <img src="../Assets/Navigation/Active/Predictions.png" width="132" height="95" alt="" id="predictions" />
+
+
+    <a href="/sales">
+        <img src="../Assets/Navigation/Passive/New sale.png" width="118" height="88" alt="" id="new_sale" />
+    </a>
     
-    <a href="/EditItem">
+    <a href="/EditSale">
         <img src="../Assets/Navigation/Passive/Modify Sale.png" alt="" width="118" height="80" id="modify_sale"/>
     </a>
     
