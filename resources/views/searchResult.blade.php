@@ -6,7 +6,7 @@ Search Confirmed
    <link href="{{asset('css/addconfirmed.css')}}" rel="stylesheet" type="text/css">
 @endsection
 @section('verticalnav')
-@include('layouts.components.verticalnavpredict')
+@include('layouts.components.verticalnavsearch')
 @endsection
 @section('content')
     <a href="modifysales.html">
