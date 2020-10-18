@@ -48,6 +48,10 @@ Route::get('/monthlyCategoryPrediciton', function () {
     return view('mcategorypredicition'); // predictions page
 });
 
+Route::get('/searchResult', function () {
+    return view('searchResult'); // search result page
+});
+
 Route::get('/display', [DisplayController::class, 'getItems']);
 Route::get('/displayItem/{itemName}', 'App\Http\Controllers\DisplayController@displayItemInfo')->name('displayItem');
 Route::post('/add','App\Http\Controllers\AddController@index')->name('add');
