@@ -9,7 +9,7 @@ use DB;
 class GetController extends Controller
 {
   public function get(Request $request) {
-    $saleId=(int)$request->input('saleId');//get sale id
+    $saleId=(int)$request->input('getSaleId');//get sale id
     $sale=Sale::where('id',$saleId)->first();//get the sale record
     $itemSales=ItemSale::where("Sales_Id",$saleId)->get();//get all itemsale record
     $itemsolds=array();

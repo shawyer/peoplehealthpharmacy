@@ -11,7 +11,7 @@ class DeleteController extends Controller
 {
     public function delete(request $request)
     {
-      $saleId=(int)$request->input('saleId');
+      $saleId=(int)$request->input('deleteSaleId');
       $sale=Sale::where('id',$saleId)->first();
       $itemSales=ItemSale::where("Sales_Id",$saleId)->get();//get all itemsale record
       $itemsolds=array();
@@ -23,8 +23,16 @@ class DeleteController extends Controller
         $item->save();
         $itemSale->destroy($itemSale['id']);
       }
-      $sale->destroy($sale['id']);
-      return view("deleterecord"); // head to confirmation page.
+      if(!empty($sale))
+      {
+        $sale->destroy($sale['id']);
+        $result="Delete Successfully";
+      }
+      else {
+        $result="Id could not be found";
+      }
+
+      return view("deleterecord",compact('result')); // head to confirmation page.
     }
 
     public function index(Request $request) {
