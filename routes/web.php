@@ -52,7 +52,7 @@ Route::get('/searchResult', function () {
     return view('searchResult'); // search result page
 });
 
-Route::get('/display-month', function () {
+Route::get('/display_month', function () {
     return view('displaymonth'); // predictions page
 });
 
