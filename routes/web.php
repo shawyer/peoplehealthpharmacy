@@ -65,5 +65,5 @@ Route::post('/edit-itemSale-Quantity','App\Http\Controllers\EditController@EditI
 Route::post('/get-sale','App\Http\Controllers\GetController@get')->name('get');
 Route::post('/delete-sale','App\Http\Controllers\DeleteController@delete')->name('delete');
 Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home');
-Route::get('/cvsdownload', 'App\Http\Controllers\GenerateCVS@GenerateCVS')->name('csv');
+Route::get('/csvdownload', 'App\Http\Controllers\GenerateCSV@GenerateCSV')->name('csv');
 
