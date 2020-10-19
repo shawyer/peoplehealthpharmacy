@@ -61,13 +61,21 @@ Monthly Sales
 		<!-- table elements -->
 		<img src="../Assets/Reports Assets/monthly sale data background.png" alt="table bg" width="1300" id="TableBg">
 		<img src="../Assets/Reports Assets/TableTitle.png" alt="title" id="TableTitle">
-		@foreach ($monthSales as $monthSale)
-            <ul>
-                <li>Sale Date: {{$monthSale->created_at}}</li>
-                <li>Item Name: {{$monthSale->Item_Name}}</li>
-                <li>Total Sold: {{$monthSale->Item_Sold}}</li>
-            </ul>
-        @endforeach
+        <!-- new table -->
+        <table>
+            <tr>
+             <th> Item Name </th> 
+             <th> Total Sold </th> 
+             <th> Sales Date </th> 
+            </tr>
+            @foreach ($monthSales as $monthSale)
+                <tr>
+                    <td> {{$monthSale->Item_Name}}</td>
+                    <td> {{$monthSale->Item_Sold}}</td>
+                    <td> {{$monthSale->created_at}}</td>
+                </tr>
+            @endforeach
+        </table>
 	</div>
     
 

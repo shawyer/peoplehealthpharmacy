@@ -265,3 +265,14 @@
     top: 180px;
     left: 825px;
 }
+table {
+    position: absolute;
+    top: 400px;
+    left: 500px;
+    font-size: 3em;
+    text-align: center;
+}
+th,
+td {
+    border: 1px solid black;
+}

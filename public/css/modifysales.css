@@ -1,62 +1,60 @@
-@media (max-width: 1920px){
+@media (max-width: 1920px) {
 }
 
 #overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #logo {
-position: absolute;
-  top: 30px;
-  left: 20px;
+    position: absolute;
+    top: 30px;
+    left: 20px;
 }
 
 #activ_col {
- position: absolute;
-  top: 580px;
-  left: 22px;
+    position: absolute;
+    top: 580px;
+    left: 22px;
 }
 
-
 #reports {
-position: absolute;
-  top: 200px;
-  left: 70px;
+    position: absolute;
+    top: 200px;
+    left: 70px;
 }
 
 #predictions {
- position: absolute;
-  top: 350px;
-  left: 50px;
+    position: absolute;
+    top: 350px;
+    left: 50px;
 }
 
 #new_sale {
-	 position: absolute;
-  top: 500px;
-  left: 60px;
+    position: absolute;
+    top: 500px;
+    left: 60px;
 }
 
 #modify_sale {
-position: absolute;
-  top: 650px;
-  left: 60px;
+    position: absolute;
+    top: 650px;
+    left: 60px;
 }
 #add_stock {
-	position: absolute;
-	top: 800px;
-	left: 60px;
+    position: absolute;
+    top: 800px;
+    left: 60px;
 }
 .nav-images {
-	margin: 0px;
+    margin: 0px;
 }
 
-
 /* format for buttons */
-.large_buttons{
+.large_buttons {
     position: absolute;
-    background-color: #6D11EF; 
+    background-color: #6d11ef;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -64,11 +62,12 @@ position: absolute;
     text-decoration: none;
     display: inline-block;
     font-size: 3em;
-    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black",
+        "sans-serif";
 }
-.small_buttons{
+.small_buttons {
     position: absolute;
-    background-color: #6D11EF; 
+    background-color: #6d11ef;
     border: none;
     color: white;
     padding: 10px 10px;
@@ -76,168 +75,167 @@ position: absolute;
     text-decoration: none;
     display: inline-block;
     font-size: 1.5em;
-    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black",
+        "sans-serif";
 }
 
-#modifytitle{
-	position: absolute;
-	top: 50px;
-	left: 300px;
+#modifytitle {
+    position: absolute;
+    top: 50px;
+    left: 300px;
 }
 #searchbackground {
-	position: absolute;
-	top: 200px;
-	left: 300px;
+    position: absolute;
+    top: 200px;
+    left: 300px;
 }
 #deletebackground {
-	position: absolute;
-	top: 650px;
-	left: 300px;
+    position: absolute;
+    top: 650px;
+    left: 300px;
 }
 #editbackground {
-	position: absolute;
-	top: 200px;
-	left: 1000px;
+    position: absolute;
+    top: 200px;
+    left: 1000px;
 }
 
 .submit_form {
-	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times,
+        "Times New Roman", "serif";
 }
 
 .form_inputs {
-	position: relative;
-	left: 900px;
+    position: relative;
+    left: 900px;
 }
 #submit_delete {
-	position: absolute;
-	top: 880px;
-	left: 550px;
+    position: absolute;
+    top: 880px;
+    left: 550px;
 }
 #submit_search {
-	position: absolute;
-	top: 430px;
-	left: 550px;
+    position: absolute;
+    top: 430px;
+    left: 550px;
 }
 
 #sDelete {
-	position: absolute;
-	width: 180px;
-	height: 50px;
-	top: 330px;
-	left: 550px;
-	border: 0;
-	background: #E1FFFF;
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    top: 780px;
+    left: 550px;
+    border: 0;
+    background: #ffecec;
 }
 
 #sSales {
-	position: absolute;
-	width: 180px;
-	height: 50px;
-	top: 780px;
-	left: 550px;
-	border: 0;
-	background: #FFECEC;
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    top: 330px;
+    left: 550px;
+    border: 0;
+    background: #e1ffff;
 }
 
-#itembackground{
-	position: absolute;
-	top: 350px;
-	left: 1020px;
+#itembackground {
+    position: absolute;
+    top: 350px;
+    left: 1020px;
 }
-#quantitybackground{
-	position: absolute;
-	top: 550px;
-	left: 1020px;
+#quantitybackground {
+    position: absolute;
+    top: 550px;
+    left: 1020px;
 }
-#orderbackground{
-	position: absolute;
-	top: 750px;
-	left: 1020px;
+#orderbackground {
+    position: absolute;
+    top: 750px;
+    left: 1020px;
 }
-
-
 
 #Item_Names {
-	position: absolute;
-	width: 180px;
-	height: 50px;
-	top: 410px;
-	left: 1190px;
-	border: 0;
-	background: #F1FFE1;
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    top: 410px;
+    left: 1190px;
+    border: 0;
+    background: #f1ffe1;
 }
 
-
 #Item_Names_Change {
-		position: absolute;
-	width: 180px;
-	height: 50px;
-	top: 410px;
-	left: 1390px;
-	border: 0;
-	background: #F1FFE1;
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    top: 410px;
+    left: 1390px;
+    border: 0;
+    background: #f1ffe1;
 }
 
 #Change_Name {
-	position: absolute;
-	top: 410px;
-	left: 1600px;
+    position: absolute;
+    top: 410px;
+    left: 1600px;
 }
 
 #Item_Name_Quantity {
-	position: absolute;
-	width: 150px;
-	height: 50px;
-	top: 610px;
-	left: 1220px;
-	border: 0;
-	background: #FFECEC;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 610px;
+    left: 1220px;
+    border: 0;
+    background: #ffecec;
 }
 
 #Item_Quantity {
-	position: absolute;
-	width: 150px;
-	height: 50px;
-	top: 610px;
-	left: 1460px;
-	border: 0;
-	background: #FFECEC;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 610px;
+    left: 1460px;
+    border: 0;
+    background: #ffecec;
 }
 
 #operation {
-	position: absolute;
-	top: 630px;
-	left: 1380px;
+    position: absolute;
+    top: 630px;
+    left: 1380px;
 }
 
 #Change_Quantity {
-	position: absolute;
-	top: 610px;
-	left: 1650px;
+    position: absolute;
+    top: 610px;
+    left: 1650px;
 }
 
 #SaleID {
-	position: absolute;
-	width: 150px;
-	height: 50px;
-	top: 810px;
-	left: 1290px;
-	border: 0;
-	background: #F0EFF7;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 810px;
+    left: 1290px;
+    border: 0;
+    background: #f0eff7;
 }
 
 #Item_Quantity_Change {
-	position: absolute;
-	width: 150px;
-	height: 50px;
-	top: 810px;
-	left: 1480px;
-	border: 0;
-	background: #F0EFF7;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 810px;
+    left: 1480px;
+    border: 0;
+    background: #f0eff7;
 }
 
 #Change_Order {
-	position: absolute;
-	top: 810px;
-	left: 1650px;
+    position: absolute;
+    top: 810px;
+    left: 1650px;
 }

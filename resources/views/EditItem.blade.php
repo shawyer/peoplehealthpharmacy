@@ -25,13 +25,13 @@ AddSales
          <input type="text" name="getSaleId" id="sSales">
          <button type="submit" text="submit" value="submit" class="large_buttons" id="submit_search"> Search </button>
       </form>
-      <!--
+ 
       <form method="post" action="{{route('delete')}}" class="submit_form">
          {{csrf_field()}}
          <input type="text" name="deleteSaleId" id="sDelete" placeholder="Enter Sales I.D" >
          <button type="submit" text="submit" value="submit" class="large_buttons" id="submit_delete"> Submit </button>
       </form>
--->
+
       <form method="post" action="{{route('EditItem')}}" class="submit_form">
          {{csrf_field()}}
          <input type="text" name="Item_Names" placeholder="From" id="Item_Names" >
