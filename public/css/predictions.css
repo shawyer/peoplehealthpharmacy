@@ -72,6 +72,11 @@ position: absolute;
 	top: 800px;
 	left: 60px;
 }
+#back {
+	top: 950px;
+	left: 1050px;
+
+}
 .large_buttons{	
 	position: absolute;
 	/* this is the style of the button itseld */
@@ -113,3 +118,39 @@ position: absolute;
 	left: 1200px;
 }
 
+
+#itemsbc {
+	position: absolute;
+	top: 535px;
+	left: 850px;
+	color: #26A26B;
+	font-size: 3em;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+}
+
+#itemswc {
+	position: absolute;
+	top: 635px;
+	left: 870px;
+	color: #DF0A56;
+	font-size: 3em;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+}
+
+#categorybc {
+	position: absolute;
+	top: 535px;
+	left: 1550px;
+	color: #26A26B;
+	font-size: 3em;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+}
+
+#categorywc {
+	position: absolute;
+	top: 635px;
+	left: 1570px;
+	color: #DF0A56;
+	font-size: 3em;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+}
