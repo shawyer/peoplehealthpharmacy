@@ -31,11 +31,19 @@ class DisplayController extends Controller
         ->join('items','itemsale.Items_Id', '=', 'items.id')
         ->select('items.Item_Name', 'items.Item_Remaining', 'itemsale.Item_Sold', 'sales.created_at', 'items.id as items_id', 'itemsale.Items_Id as itemsale_item_id')
         ->whereMonth('sales.created_at', Carbon::now()->month)->get();
-
-
         #$monthSales = \App\Models\Sale::all();
         #dd($monthSales);
         return view ('monthlysales', compact('monthSales'));
     }
 
+    public function displayWeek(){
+        $weekSales = DB::table('sales')
+        ->join('itemsale','sales.id', '=', 'itemsale.Sales_Id')
+        ->join('items','itemsale.Items_Id', '=', 'items.id')
+        ->select('items.Item_Name', 'items.Item_Remaining', 'itemsale.Item_Sold', 'sales.created_at', 'items.id as items_id', 'itemsale.Items_Id as itemsale_item_id')
+        ->whereBetween('sales.created_at', [Carbon::now()->startOfWeek(), Carbon::now()->endOfWeek()])->get();
+
+        //dd($weekSales);
+        return view ('weeklysales', compact('weekSales'));
+    }
 }

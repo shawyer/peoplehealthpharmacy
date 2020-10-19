@@ -57,6 +57,7 @@ Route::post('/post-mCategoryPredicitons','App\Http\Controllers\prediction@displa
 Route::post('/post-wCategoryPredicitons','App\Http\Controllers\prediction@displayWeeklyCategoryPrediciton')->name('monthlyW');
 Route::post('/post-wPredicitons','App\Http\Controllers\prediction@displayWeeklyPrediciton')->name('weekly');
 Route::get('/displaymonth', 'App\Http\Controllers\DisplayController@displayMonthlyItems');
+Route::get('/displayweek', 'App\Http\Controllers\DisplayController@displayWeek');
 Route::post('/post-sale','App\Http\Controllers\AddController@sale')->name('sale');
 Route::post('/edit-item','App\Http\Controllers\EditController@EditItem')->name('EditItem');
 Route::post('/edit-item-Quantity','App\Http\Controllers\EditController@EditItemQuantity')->name('EditItemQuantity');
