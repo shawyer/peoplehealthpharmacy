@@ -1,0 +1,93 @@
+/* CSS Document */
+/* format for nav */
+@media (max-width: 1920px) {
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#logo {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+
+/*#activ_col {
+ position: absolute;
+  top: 125px;
+  left: 22px;
+}*/
+
+#reports {
+    position: absolute;
+    top: 200px;
+    left: 70px;
+}
+
+#predictions {
+    position: absolute;
+    top: 350px;
+    left: 50px;
+}
+
+#new_sale {
+    position: absolute;
+    top: 500px;
+    left: 60px;
+}
+
+#modify_sale {
+    position: absolute;
+    top: 650px;
+    left: 60px;
+}
+#add_stock {
+    position: absolute;
+    top: 800px;
+    left: 60px;
+}
+.nav-images {
+    margin: 0px;
+}
+
+/* format for the rest */
+#PageTitle {
+    position: absolute;
+    top: 40px;
+    left: 300px;
+}
+
+#ConfirmedText {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+}
+
+#BackButton {
+    position: absolute;
+    top: 400px;
+    left: 685px;
+}
+
+#ConfirmBg {
+    position: absolute;
+    top: 500px;
+    left: 900px;
+}
+
+.large_buttons {
+    position: absolute;
+    background-color: #6d11ef;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3em;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black",
+        "sans-serif";
+}
