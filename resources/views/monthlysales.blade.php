@@ -3,12 +3,15 @@
 @section('content')
 <h1>Hey</h1>
 <div class="container">
+  <table border="1px">
+    <tr><td>Item Name</td><td>Total Sold</td><td>Sale Date</td></tr>
     @foreach ($monthSales as $monthSale)
-        <ul>
-            <li>Sale Date: {{$monthSale->created_at}}</li>
-            <li>Item Name: {{$monthSale->Item_Name}}</li>
-            <li>Total Sold: {{$monthSale->Item_Sold}}</li>
-        </ul>
+        <tr>
+            <td> {{$monthSale->Item_Name}}</td>
+            <td> {{$monthSale->Item_Sold}}</td>
+            <td> {{$monthSale->created_at}}</td>
+        </tr>
     @endforeach
+  </table>
 </div>
 @endsection
