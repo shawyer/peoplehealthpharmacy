@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Auth::routes();
@@ -71,6 +71,7 @@ Route::post('/post-mPredicitons','App\Http\Controllers\prediction@displayMonthly
 Route::post('/post-mCategoryPredicitons','App\Http\Controllers\prediction@displayMonthlyCategoryPrediciton')->name('monthlyC');
 Route::post('/post-wCategoryPredicitons','App\Http\Controllers\prediction@displayWeeklyCategoryPrediciton')->name('monthlyW');
 Route::post('/post-wPredicitons','App\Http\Controllers\prediction@displayWeeklyPrediciton')->name('weekly');
+Route::get('/displayweek', 'App\Http\Controllers\DisplayController@displayWeek');
 Route::post('/post-sale','App\Http\Controllers\AddController@sale')->name('sale');
 Route::post('/edit-item','App\Http\Controllers\EditController@EditItem')->name('EditItem');
 Route::post('/edit-item-Quantity','App\Http\Controllers\EditController@EditItemQuantity')->name('EditItemQuantity');
@@ -78,3 +79,4 @@ Route::post('/edit-itemSale-Quantity','App\Http\Controllers\EditController@EditI
 Route::post('/get-sale','App\Http\Controllers\GetController@get')->name('get');
 Route::post('/delete-sale','App\Http\Controllers\DeleteController@delete')->name('delete');
 Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home');
+Route::get('/csvdownload', 'App\Http\Controllers\GenerateCSV@GenerateCSV')->name('csv');

@@ -7,8 +7,8 @@
         <li>Items Remaining: {{$item->Item_Remaining}}</li>
         <li>Orders
             <ul>
-                @foreach ($item->Sales as $itemSale)
-                    <li> <i>{{$itemSale->created_at}}</i>: <b>{{$itemSale->Item_Sold}}</b></li>
+                @foreach ($item->Sales as $solditem)
+                    <li> <i>{{$solditem->created_at}}</i></li>
                 @endforeach
             </ul>
         </li>

@@ -14,7 +14,7 @@ class ItemSale extends Model
     public $timestamps =false;
 
     public function Items(){
-        return $this->belongsTo('App\Models\Item', 'id');
+        return $this->belongsTo('App\Models\Item');
     }
     
     public function Sales(){

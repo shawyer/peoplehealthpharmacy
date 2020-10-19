@@ -13,12 +13,14 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
                     {{ __('You are logged in!') }}
+
+                    
                 </div>
+            <br>
+                <a href={{route('csv')}}>Download CSV</a>
             </div>
         </div>
-    </div>
 </div>
 @endsection
  
