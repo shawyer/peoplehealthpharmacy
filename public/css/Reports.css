@@ -42,7 +42,6 @@
 	right: 0;
 	
 	width: 320px;
-/*	height: 1080px;*/
 }
 
 #FilterIcon {
@@ -63,150 +62,94 @@
 	height: 40px;
 }
 
-/*input[type="submit"] {
-	
-}*/
 #SubmitButton {
 	position: absolute;
 	top: 350px;
 	left: 1675px;
 }
 
-input[type="checkbox"] {
-	
-  	width: 30px; 
-  	height: 30px; 
-}
-
-#checkbox1 {
+#SortText {
 	position: absolute;
 	top: 70px;
 	left: 1620px;
 }
-#checkbox2 {
+#sortBg {
+	position: absolute;
+	top: 70px;
+	left: 1780px;
+	width: 140px;
+}
+#sortA {
+	position: absolute;
+	top: 80px;
+	left: 1770px;	
+}
+#sortla {
+	position: absolute;
+	top: 80px;
+	left: 1800px;
+	font-size: 1.1em;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	color: #261D56;
+}
+#sortD {
+	position: absolute;
+	top: 80px;
+	left: 1840px;	
+}
+#sortld {
+	position: absolute;
+	top: 80px;
+	left: 1870px;
+	font-size: 1.1em;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	color: #261D56;
+}
+
+
+#CriteriaText {
 	position: absolute;
 	top: 130px;
 	left: 1620px;
 }
-#checkbox3 {
+#criteriaBg {
+	position: absolute;
+	top: 130px;
+	left: 1780px;
+	width: 140px;
+}
+#dropdownMenu {
+	position: absolute;
+	top: 135px;
+	left: 1800px;
+	height: 25px;
+	width: 80px;
+}
+
+#NameText {
 	position: absolute;
 	top: 190px;
 	left: 1620px;
 }
-#checkbox4 {
-	position: absolute;
-	top: 250px;
-	left: 1620px;
-}
-
-#checkbox1-1 {
-	position: absolute;
-	top: 70px;
-	left: 1795px;
-}
-#checkbox2-1 {
-	position: absolute;
-	top: 130px;
-	left: 1795px;
-}
-#checkbox3-1 {
+#itemBg {
 	position: absolute;
 	top: 190px;
-	left: 1795px;
+	left: 1780px;
+	width: 130px;
 }
-#checkbox4-1 {
+#ItemNameInput {
 	position: absolute;
-	top: 250px;
-	left: 1795px;
-}
-
-#checkbox1-2 {
-	position: absolute;
-	top: 130px;
-	left: 1875px;
-}#checkbox2-2 {
-	position: absolute;
-	top: 190px;
-	left: 1875px;
-}
-#checkbox3-2 {
-	position: absolute;
-	top: 250px;
-	left: 1875px;
-}
-#checkbox4-2 {
-	position: absolute;
-	top: 70px;
-	left: 1875px;
+	top: 200px;
+	left: 1790px;
+	width: 120px;
+	border: 0;
+	background-color: #DAD5F6;
 }
 
-#DateText {
+#viewText {
 	position: absolute;
-	top: 70px;
-	left: 1660px;
-}
-#PersonText {
-	position: absolute;
-	top: 130px;
-	left: 1660px;
-}
-#ItemText {
-	position: absolute;
-	top: 190px;
-	left: 1660px;
-}
-#PriceText {
-	position: absolute;
-	top: 250px;
-	left: 1660px;
-}
-
-#ArrowDown1 {
-	position: absolute;
-	top: 70px;
-	left: 1770px;
-}
-#ArrowDown2 {
-	position: absolute;
-	top: 130px;
-	left: 1770px;
-}
-#ArrowDown3 {
-	position: absolute;
-	top: 190px;
-	left: 1770px;
-}
-#ArrowDown4 {
-	position: absolute;
-	top: 250px;
-	left: 1770px;
-}
-
-#ArrowUp1 {
-	position: absolute;
-	top: 70px;
-	left: 1850px;
-}
-#ArrowUp2 {
-	position: absolute;
-	top: 130px;
-	left: 1850px;
-}
-#ArrowUp3 {
-	position: absolute;
-	top: 190px;
-	left: 1850px;
-}
-#ArrowUp4 {
-	position: absolute;
-	top: 250px;
-	left: 1850px;
-}
-
-#ViewText {
-	position: absolute;
-	top: 500px;
-	left: 1740px;
+	top: 500px;;
+	left: 1730px;
 }
 
 /* format for buttons */
@@ -321,5 +264,8 @@ position: absolute;
 	top: 180px;
 	left: 825px;
 }
+
+
+
 
 
