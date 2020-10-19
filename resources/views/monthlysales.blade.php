@@ -64,7 +64,7 @@ Monthly Sales
              <th> Total Sold </th>
              <th> Sales Date </th>
             </tr>
-            @foreach ($monthSales as $monthSale)
+            @foreach ($monthSales ?? '' as $monthSale)
                 <tr>
                     <td> {{$monthSale->Item_Name}}</td>
                     <td> {{$monthSale->Item_Sold}}</td>

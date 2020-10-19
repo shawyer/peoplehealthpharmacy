@@ -52,11 +52,16 @@ Route::get('/searchResult', function () {
     return view('searchResult'); // search result page
 });
 
-Route::get('/display_month', function () {
-    return view('displaymonth'); // predictions page
+Route::get('/displaymonth', function () {
+    return view('displaymonth'); // display form page
 });
 
-Route::post('/displaymonth', 'App\Http\Controllers\DisplayController@displayMonthlyItems')->name('display-month');
+/*
+Route::get('/displaymonth', function () {
+    return view('monthlysales'); // display form page
+});
+*/
+Route::post('/display-month', 'App\Http\Controllers\DisplayController@displayMonthlyItems')->name('display-month');
 
 Route::get('/display', [DisplayController::class, 'getItems']);
 Route::get('/displayItem/{itemName}', 'App\Http\Controllers\DisplayController@displayItemInfo')->name('displayItem');
