@@ -44,7 +44,7 @@ Monthly Sales
 
         <input type="button" value="Weekly" onclick="history.back()" width="320" height="110" class = "large_buttons" id="weekly"/>
         <input type="button" value="Monthly" onclick="history.back()" width="320" height="110" class = "large_buttons" id="monthly" />
-
+        <!-- routing for csv file download -->
         <a href="{{route('csv')}}">
             <img src="../Assets/Reports Assets/Light 🌕- Button-2. Outlined-A. Text-Enabled.png" alt="Download button" id="DownloadButton">
         </a>
