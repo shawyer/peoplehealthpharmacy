@@ -5,26 +5,26 @@
 #SearchBar {
     position: absolute;
     top: 35px;
-    left: 580px;
+    left: 560px;
     height: 45px;
 }
 
 #ReportsText {
     position: absolute;
     top: 40px;
-    left: 350px;
+    left: 330px;
 }
 
 #SearchIcon {
     position: absolute;
     top: 40px;
-    left: 1000px;
+    left: 980px;
 }
 
 #SearchInput {
     position: absolute;
     top: 45px;
-    left: 600px;
+    left: 580px;
 
     height: 25px;
     width: 350px;
@@ -38,7 +38,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 1600px;
+    left: 1580px;
     right: 0;
 
     width: 320px;
@@ -47,7 +47,7 @@
 #FilterIcon {
     position: absolute;
     top: 20px;
-    left: 1620px;
+    left: 1600px;
 
     width: 30px;
     height: 25px;
@@ -56,7 +56,7 @@
 #FiltersText {
     position: absolute;
     top: 15px;
-    left: 1725px;
+    left: 1705px;
 
     width: 80px;
     height: 40px;
@@ -65,29 +65,29 @@
 #SubmitButton {
     position: absolute;
     top: 350px;
-    left: 1675px;
+    left: 1655px;
 }
 
 #SortText {
     position: absolute;
     top: 70px;
-    left: 1620px;
+    left: 1600px;
 }
 #sortBg {
     position: absolute;
     top: 70px;
-    left: 1780px;
+    left: 1760px;
     width: 140px;
 }
 #sortA {
     position: absolute;
     top: 80px;
-    left: 1770px;
+    left: 1750px;
 }
 #sortla {
     position: absolute;
     top: 80px;
-    left: 1800px;
+    left: 1780px;
     font-size: 1.1em;
     font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black",
         "sans-serif";
@@ -96,12 +96,12 @@
 #sortD {
     position: absolute;
     top: 80px;
-    left: 1840px;
+    left: 1820px;
 }
 #sortld {
     position: absolute;
     top: 80px;
-    left: 1870px;
+    left: 1850px;
     font-size: 1.1em;
     font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black",
         "sans-serif";
@@ -111,18 +111,18 @@
 #CriteriaText {
     position: absolute;
     top: 130px;
-    left: 1620px;
+    left: 1600px;
 }
 #criteriaBg {
     position: absolute;
     top: 130px;
-    left: 1780px;
+    left: 1720px;
     width: 140px;
 }
 #dropdownMenu {
     position: absolute;
     top: 135px;
-    left: 1800px;
+    left: 1780px;
     height: 25px;
     width: 80px;
 }
@@ -130,18 +130,18 @@
 #NameText {
     position: absolute;
     top: 190px;
-    left: 1620px;
+    left: 1600px;
 }
 #itemBg {
     position: absolute;
     top: 190px;
-    left: 1780px;
+    left: 1760px;
     width: 130px;
 }
 #ItemNameInput {
     position: absolute;
     top: 190px;
-    left: 1790px;
+    left: 1770px;
     width: 120px;
     border: 0;
     background-color: #dad5f6;
@@ -150,7 +150,7 @@
 #viewText {
     position: absolute;
     top: 500px;
-    left: 1730px;
+    left: 1710px;
 }
 
 /* format for buttons */
@@ -171,7 +171,7 @@
 #search {
     position: absolute;
     top: 40px;
-    left: 1040px;
+    left: 1020px;
     width: 100px;
 
     background-color: #6d11ef;
@@ -186,18 +186,18 @@
 
 #weekly {
     top: 600px;
-    left: 1675px;
+    left: 1655px;
 }
 
 #monthly {
     top: 750px;
-    left: 1675px;
+    left: 1655px;
 }
 
 #DownloadButton {
     position: absolute;
     top: 900px;
-    left: 1675px;
+    left: 1655px;
 }
 
 /* format for nav */
