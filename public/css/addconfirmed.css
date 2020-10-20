@@ -8,39 +8,39 @@
 }
 
 #logo {
-position: absolute;
-  top: 30px;
-  left: 20px;
+    position: absolute;
+    top: 30px;
+    left: 20px;
 }
 
 #activ_col {
- position: absolute;
-  top: 580px;
-  left: 22px;
+    position: absolute;
+    top: 580px;
+    left: 22px;
 }
 
 #reports {
-position: absolute;
-  top: 200px;
-  left: 70px;
+    position: absolute;
+    top: 200px;
+    left: 70px;
 }
 
 #predictions {
- position: absolute;
-  top: 350px;
-  left: 50px;
+    position: absolute;
+    top: 350px;
+    left: 50px;
 }
 
 #new_sale {
-     position: absolute;
-  top: 500px;
-  left: 60px;
+    position: absolute;
+    top: 500px;
+    left: 60px;
 }
 
 #modify_sale {
-position: absolute;
-  top: 650px;
-  left: 60px;
+    position: absolute;
+    top: 650px;
+    left: 60px;
 }
 
 #add_stock {
@@ -54,43 +54,56 @@ position: absolute;
 
 /* format for th rest */
 #BackButton {
-	position: absolute;
-	top: 70px;
-	left: 350px;
+    position: absolute;
+    top: 70px;
+    left: 350px;
 }
 
 #Title {
-	position: absolute;
-	top: 70px;
-	left: 550px;
+    position: absolute;
+    top: 70px;
+    left: 550px;
 }
 
 #Table {
-	position: absolute;
-	top: 250px;
-	left: 300px;
+    position: absolute;
+    top: 250px;
+    left: 300px;
 }
 
 #BigBg {
-	position: absolute;
-	top: 250px;
-	left: 1200px;
+    position: absolute;
+    top: 250px;
+    left: 1200px;
 }
 
 #IdBg {
-	position: absolute;
-	top: 350px;
-	left: 670px;
+    position: absolute;
+    top: 380px;
+    left: 690px;
+    font-size: 2.2em;
+    color: #574b90;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-
-#NameBg {
-	position: absolute;
-	top: 550px;
-	left: 670px;
+table {
+    position: absolute;
+    top: 500px;
+    left: 430px;
+    font-size: 1.2em;
+    text-align: center;
+    width: 25%;
 }
-
-#AmountBg {
-	position: absolute;
-	top: 750px;
-	left: 670px;
+th,
+td {
+    border: 1px solid black;
+    padding: 15px;
+}
+tr:nth-child(even) {
+    background-color: #f4faff;
+}
+th {
+    color: #261d56;
+}
+tr {
+    color: #655d8d;
 }

@@ -9,7 +9,8 @@ Search Confirmed
 @include('layouts.components.verticalnavsearch')
 @endsection
 @section('content')
-    <a href="modifysales.html">
+   
+    <a href="EditItem.html">
 		<img src="../Assets/Search Confirmed Assets/arrow-left.png" alt="" id="BackButton" />
 	</a>
 	

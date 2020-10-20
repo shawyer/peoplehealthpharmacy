@@ -15,12 +15,6 @@
     left: 20px;
 }
 
-/*#activ_col {
- position: absolute;
-  top: 125px;
-  left: 22px;
-}*/
-
 #reports {
     position: absolute;
     top: 200px;
@@ -90,4 +84,11 @@
     font-size: 3em;
     font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black",
         "sans-serif";
+}
+#success_report {
+    font-size: 3em;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    position: absolute;
+    top: 200px;
+    left: 550px;
 }

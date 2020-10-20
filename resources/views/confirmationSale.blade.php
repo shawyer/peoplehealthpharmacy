@@ -18,7 +18,7 @@ AddSalesConfirmation
 @section('content')
 
 <img src="../Assets/Submit Confirmed Assets/Title.png" alt="" id="PageTitle" />
-		<img src="../Assets/Submit Confirmed Assets/ConfirmedText.png" id="ConfirmedText" />
-		<img src="../Assets/Submit Confirmed Assets/ConfirmBg.png" id="ConfirmBg" />
-    
-    <input type="button" value="Back" onclick="history.back()" width="320" height="110" class = "large_buttons" id="BackButton" />
+<img src="../Assets/Submit Confirmed Assets/ConfirmedText.png" id="ConfirmedText" />
+<img src="../Assets/Submit Confirmed Assets/ConfirmBg.png" id="ConfirmBg" />
+
+<input type="button" value="Back" onclick="history.back()" width="320" height="110" class = "large_buttons" id="BackButton" />
