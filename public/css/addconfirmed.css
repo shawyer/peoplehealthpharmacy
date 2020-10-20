@@ -53,6 +53,13 @@
 }
 
 /* format for th rest */
+
+#BigBg {
+    position: absolute;
+    top: 250px;
+    left: 1000px;
+}
+
 #BackButton {
     position: absolute;
     top: 70px;
@@ -69,12 +76,6 @@
     position: absolute;
     top: 250px;
     left: 300px;
-}
-
-#BigBg {
-    position: absolute;
-    top: 250px;
-    left: 1200px;
 }
 
 #IdBg {

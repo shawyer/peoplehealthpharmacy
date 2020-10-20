@@ -1,5 +1,5 @@
 <div class = "vertical_nav">
-    <img src="../Assets/Navigation/Background/Combined Shape.png" width="250" height="1080" alt="" id = "overlay"/>
+    <img src="../Assets/Navigation/Background/Combined Shape.png"  alt="" id = "overlay"/>
     <img src="../Assets/Navigation/Background/Logo.png" width="181" height="95" alt="" id = "logo"/>
     <img src="../Assets/Navigation/Active/Active Color.png" width="202" height="219" alt="" id="activ_col"/>
     

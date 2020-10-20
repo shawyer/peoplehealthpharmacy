@@ -14,9 +14,9 @@ Search Confirmed
 	</a>
 	
 	<img src="../Assets/Search Confirmed Assets/TItle.png" alt="" id="Title" />
-	<img src="../Assets/Search Confirmed Assets/Table Template.png" alt="" id="Table" />
-	<img src="../Assets/Search Confirmed Assets/Search Confirm Bg.png" alt="" id="BigBg" />
 	
+	<img src="../Assets/Search Confirmed Assets/Search Confirm Bg.png" alt="" id="BigBg" />
+	<img src="../Assets/Search Confirmed Assets/Table Template.png" alt="" id="Table" />
   <div class="container">
   <p id= "IdBg">{{$saleId}}</p>
   <table>
