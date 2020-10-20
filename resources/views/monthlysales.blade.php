@@ -15,7 +15,7 @@ Monthly Sales
     <div>	<!-- Filter elements -->
         <!-- Texts and other icons -->
         <img src="../Images/Bg Right.png" alt="Bg blue color" height="1080" id="BgRight">
-        <img src="../Assets/Reports Assets/Light 🌕- Button-2. Outlined-A. Text-Enabled.png" alt="Download button" id="DownloadButton">
+        
         <img src="../Images/FilterIcon.png" alt="Filter Icon" id="FilterIcon">
         <img src="../Images/FiltersText.png" alt="Filters" id="FiltersText">
         <img src="../Images/ViewText.png" alt="View" id="ViewText">
@@ -44,6 +44,10 @@ Monthly Sales
 
         <input type="button" value="Weekly" onclick="history.back()" width="320" height="110" class = "large_buttons" id="weekly"/>
         <input type="button" value="Monthly" onclick="history.back()" width="320" height="110" class = "large_buttons" id="monthly" />
+
+        <a href="{{route('csv')}}">
+            <img src="../Assets/Reports Assets/Light 🌕- Button-2. Outlined-A. Text-Enabled.png" alt="Download button" id="DownloadButton">
+        </a>
     </div>
 
     <div>
