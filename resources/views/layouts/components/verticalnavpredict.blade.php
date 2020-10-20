@@ -15,7 +15,7 @@
         <img src="../Assets/Navigation/Passive/New sale.png" width="118" height="88" alt="" id="new_sale" />
     </a>
     
-    <a href="/EditSale">
+    <a href="/EditItem">
         <img src="../Assets/Navigation/Passive/Modify Sale.png" alt="" width="118" height="80" id="modify_sale"/>
     </a>
     
