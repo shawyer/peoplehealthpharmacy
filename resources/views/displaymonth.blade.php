@@ -2,22 +2,20 @@
 
 @section('content')
 <div class="container" id="hidedis">
-  
+
   <form method="post" name = "initial_submit" action="{{route('display-month')}}">
    {{csrf_field()}}
-    <input type="radio" name="sort" value="a" id="sortA"/>
-    <label for="sortA" id="sortla">Asc</label><br>
-    <input type="radio" name="sort" value="d" id="sortD"/>
-    <label for="sortD" id="sortld">Desc</label><br>
+    <input type="radio" name="sort" value="a" id="sortA" hidden="hidden"/>
+    <input type="radio" name="sort" value="d" id="sortD" hidden="hidden" accept=""/>
 
-    <select name="Criteria" id="dropdownMenu">
-        <option value="qty">Quantity</option>
-        <option value="name">Item</option>
-        <option value="date">Date</option>
+    <select name="Criteria" id="dropdownMenu" hidden="hidden">
+        <option value="qty"></option>
+        <option value="name"></option>
+        <option value="date"></option>
     </select>
-    <input type="text" placeholder="(optional)" name="filter" id="ItemNameInput">
-    <button type="submit" text="submit" value="submit"> Submit </button>
-  
+    <input type="text" placeholder="(optional)" name="filter" id="ItemNameInput" hidden="hidden">
+    <button type="submit" text="submit" value="submit" hidden="hidden"> Submit </button>
+
   </form>
 
 </div>
