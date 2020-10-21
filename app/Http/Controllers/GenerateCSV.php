@@ -9,11 +9,6 @@ use Carbon\Carbon;
 
 class GenerateCSV extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-    
     public function GenerateCSV(){
         /*$monthSales = DB::table('sales')
         ->join('itemsale','sales.id', '=', 'itemsale.Sales_Id')

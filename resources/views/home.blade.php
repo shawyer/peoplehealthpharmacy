@@ -17,6 +17,9 @@
 
                     
                 </div>
+            <br>
+                <a href={{route('csv')}}>Download CSV</a>
+            </div>
         </div>
 </div>
 @endsection

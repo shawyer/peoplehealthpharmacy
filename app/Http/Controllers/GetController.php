@@ -8,11 +8,6 @@ use Illuminate\Http\Request;
 use DB;
 class GetController extends Controller
 {
-  public function __construct()
-  {
-      $this->middleware('auth');
-  }
-  
   public function get(Request $request) {
     $saleId=(int)$request->input('getSaleId');//get sale id
     $sale=Sale::where('id',$saleId)->first();//get the sale record
