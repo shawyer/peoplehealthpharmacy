@@ -47,11 +47,9 @@ Route::get('/weeklyCategoryPrediciton', function () {
 Route::get('/monthlyCategoryPrediciton', function () {
     return view('mcategorypredicition'); // predictions page
 });
-
 Route::get('/searchResult', function () {
     return view('searchResult'); // search result page
 });
-
 Route::get('/displaymonth', function () {
     return view('displaymonth'); // display form page
 });
