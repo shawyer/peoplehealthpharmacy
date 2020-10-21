@@ -18,8 +18,8 @@ Predictions
          <input type="text" id="item" name="Item_Name" placeholder ="Enter Item" value="" >
         <input type="text" id="category" name="Item_Category" placeholder ="Enter Category" value="" >
         
-        <input type="submit" value="Weekly" onclick="history.back()" width="320" height="110" class = "large_buttons" id="weekly" formaction="{{route('weekly')}}"/>
-        <input type="submit" value="Monthly" onclick="history.back()" width="320" height="110" class = "large_buttons" id="monthly" formaction="{{route('monthly')}}"/>
+        <input type="submit" value="Weekly" width="320" height="110" class = "large_buttons" id="weekly" formaction="{{route('weekly')}}"/>
+        <input type="submit" value="Monthly" width="320" height="110" class = "large_buttons" id="monthly" formaction="{{route('monthly')}}"/>
     </form> 
 
 @endsection
