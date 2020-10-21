@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 use DB;
 class EditController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function EditItem(Request $request) {
         $Item = $request->input('Item_Names');
         $ItemId = Item::where("Item_Name", $Item)->first(); // Get the item name's record

@@ -9,6 +9,11 @@ use DB;
 use Carbon\Carbon;
 class prediction extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function displayMonthlyPrediciton(Request $request) {
         if($request->input("Item_Name") != "") {
             $Item = $request->input('Item_Name');
