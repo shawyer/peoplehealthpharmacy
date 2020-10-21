@@ -41,9 +41,9 @@ Monthly Sales
         
         <!-- buttons -->
         <img src="../Assets/Reports Assets/Filter.png" id="viewText" />
-
-        <input type="button" value="Weekly" onclick="window.location.href='/monthlysales'" width="320" height="110" class = "large_buttons" id="weekly"/>
-        <input type="button" value="Monthly" onclick="window.location.href='/weeklysales'" width="320" height="110" class = "large_buttons" id="monthly" />
+        <!-- we already im monthly -->
+        <input type="button" value="Weekly" onclick="window.location.href='/displayweek'" width="320" height="110" class = "large_buttons" id="weekly"/>
+        <input type="button" value="Monthly"  width="320" height="110" class = "large_buttons" id="monthly" />
         <!-- routing for csv file download -->
         <a href="{{route('csv')}}">
             <img src="../Assets/Reports Assets/Light 🌕- Button-2. Outlined-A. Text-Enabled.png" alt="Download button" id="DownloadButton">
