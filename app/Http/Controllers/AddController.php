@@ -8,6 +8,10 @@ use Illuminate\Http\Request;
 use DB;
 class AddController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function submit(Request $request) { 
         $Item = new Item(); //Create new item
         $Item->Item_Name = $request->input("Item_Name"); // set item name
